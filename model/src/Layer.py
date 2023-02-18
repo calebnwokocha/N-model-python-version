@@ -1,4 +1,4 @@
-import Node
+import Node as node
 
 class Layer:
     """
@@ -17,7 +17,7 @@ class Layer:
         """
         self.nodes = []
         for i in range(width):
-            self.nodes.append(Node())
+            self.nodes.append(node.Node())
 
     def get_nodes(self):
         """

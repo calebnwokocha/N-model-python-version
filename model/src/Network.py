@@ -1,4 +1,4 @@
-import Layer
+import Layer as layer
 
 class Network:
     """
@@ -18,7 +18,7 @@ class Network:
         :param length: The number of layers in the network
         :param width: The width of each layer in the network
         """
-        self.layers = [Layer(width) for i in range(length)]
+        self.layers = [layer.Layer(width) for i in range(length)]
 
     def __init__(self, length, widths):
         """
@@ -26,7 +26,7 @@ class Network:
         :param length: The number of layers in the network
         :param widths: The width of each layer in the network as a list
         """
-        self.layers = [Layer(widths[i]) for i in range(length)]
+        self.layers = [layer.Layer(widths[i]) for i in range(length)]
 
     def get_layers(self):
         """

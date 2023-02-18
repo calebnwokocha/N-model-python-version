@@ -1,5 +1,5 @@
 import math
-import StatUtil
+import StatUtil as stat
 import numpy as np
 from typing import Callable, Tuple
 
@@ -31,7 +31,6 @@ class Node:
         self.inputMean = None
         self.inputUpperBound = None
         self.inputLowerBound = None
-        self.stat = StatUtil()
 
     def get_hypothesis(self):
         """

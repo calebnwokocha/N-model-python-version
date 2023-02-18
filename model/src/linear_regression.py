@@ -1,13 +1,9 @@
 import math
 import random
-import Multitask
-import Network
+import Multitask as multitask
+import Network as network
 
-def main(args):
-
-    # Create an instance of Multitask
-    multitask = Multitask()
-
+def main():
     # Create an array of 10 networks
     networks = [None] * 10
 
@@ -39,7 +35,7 @@ def main(args):
 
     # Initialize the networks
     for i in range(1, len(networks)):
-        networks[i] = Network(2, 1)
+        networks[i] = network.Network(2, 1)
         networks[i].set_c_function("square", 2.0, square)
         networks[i].set_power(-6.0)
         networks[i].set_coverage(4.0)
@@ -71,6 +67,5 @@ def main(args):
             print()
 
 
-if __name__ == "__main__":
-    import sys
-   
+if __name__ == '__main__':
+    main()
