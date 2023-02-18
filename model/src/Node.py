@@ -1,5 +1,5 @@
 import math
-from model.src.StatUtil import StatUtil
+import StatUtil
 import numpy as np
 from typing import Callable, Tuple
 
@@ -46,13 +46,6 @@ class Node:
         :return: The value of the thesis variable.
         """
         return self.thesis
-
-    def get_weight(self):
-        """
-        This method returns a string representation of the rule of the current node.
-        :return: A string representation of the rule of the current node.
-        """
-        return self.thesis / self.hypothesis
 
     def get_current_error_mean(self):
         """

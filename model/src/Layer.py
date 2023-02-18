@@ -1,4 +1,4 @@
-from model.src.Node import Node
+import Node
 
 class Layer:
     """
@@ -109,17 +109,6 @@ class Layer:
         """
         degree = [node.get_degree() for node in self.nodes]
         return degree
-
-    def get_weight(self):
-        """
-        This method returns a list of the weight of each node in the layer.
-
-        Returns:
-        -------
-        list: A list of floats representing the weight of the nodes.
-        """
-        weight = [node.get_weight() for node in self.nodes]
-        return weight
 
     def get_power(self):
         """
